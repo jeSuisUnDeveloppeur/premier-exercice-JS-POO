@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Au petitt chinois</title>
+    <link rel="shortcut icon" href="./photos/salade.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script  src="./js/app.js"defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark p-3">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  id="accueil"
+                  aria-current="page"
+                  href='#'
+                  >ACCUEIL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="menus" href='#'>LES MENUS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="laCarte" href='#'>LA CARTE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="contact" href='#'>NOUS CONTACTER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row mt-5">
+        <form class="col-lg-10 mt-5 ">
+          <fieldset>
+            <legend class="text-white text-center mb-5 font-weight-bold">CONTACTER LE SERVICE CLIENT</legend>
+          
+            <label for="selectPhoto" class="text-white">VOTRE DEMANDE: *</label>
+            <select
+              class="form-select w-50 mb-5"
+              id="selectDemande"
+              aria-label="List de choix votre demande concerne"
+            >
+              <option selected>Votre demande concerne</option>
+              <option value="Information articles">Information articles</option>
+              <option value="Commande & paiement">Commande & paiement</option>
+              <option value="Expédition & livraison">Expédition & livraison</option>
+              <option value="Retour,échange & remboursement">Retour,échange & remboursement</option>
+              <option value="Code promo & Bon d'achat">Code promo & Bon d'achat</option>
+              <option value="Newsletters">Newsletters</option>
+              <option value="Problème technique">Problème technique</option>
+              <option value="Autres demandes">Autres demandes</option>
+              <option value="Protection des données personnelles">Protection des données personnelles</option>
+            </select>
+            <label for="textMessage" class="text-white">MESSAGE : *</label>
+            <textarea
+              class="form-control w-50 mb-5"
+              id="textMessage"
+              style="height: 80px"
+            ></textarea>
+            <label for="nom" class="text-white">VOTRE NOM : *</label>
+            <input
+              type="text"
+              id="nom"
+              class="form-control w-50 mb-5"
+              aria-label="entrer votre nom"
+            />
+            <label for="prenom" class="text-white">VOTRE PRENOM : *</label>
+            <input
+              type="text"
+              id="prenom"
+              class="form-control mb-5 w-50"
+              aria-label="entrer votre nom"
+            />
+            <label for="courriel" class="text-white">VOTRE COURRIEL : *</label>
+            <input
+              type="email"
+              class="form-control mb-5 w-50"
+              id="courriel"
+              aria-label="entrer votre email"
+            />
+            <label for="selectPhoto" class="text-white">VOTRE PHOTO : *</label>
+              <select
+                class="form-select w-25"
+                id="selectPhoto"
+                aria-label="List de choix selectionner votre photo"
+              >
+                <option selected>Selectionner votre photo</option>
+                <option value="Alain">alain.jpg</option>
+                <option value="Albert">albert.jpg</option>
+                <option value="Alfred">alfred.jpg</option>
+                <option value="Alphonse">alphonse.jpg</option>
+                <option value="Alphonsine">alphonsine.jpg</option>
+                <option value="Berth">berth.jpg</option>
+                <option value="Elisabeth">elisabeth.jpg</option>
+                <option value="Gertrude">gertrude.jpg</option>
+                <option value="Gilbert">gilbert.jpg</option>
+                <option value="Gilberte">gilberte.jpg</option>
+                <option value="Hugh">hugh.jpg</option>
+                <option value="Jacques">jacques.jpg</option>
+                <option value="John">john.jpg</option>
+              </select>
+              <img src="photos/neutre.jpg" />
+            </fieldset>
+          </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-image: url(../photos/debbie-tea-LO7rNP0LRro-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header nav div button{
+    background-color: #212121!important;
+}
+
+img{
+    width: 200px;   
+    transform: translate(200%,-30%);
+}
+
+form{
+    display: none;
+}
+
+fieldset{
+    border: 2px solid white!important;
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-bottom: 5%;
+}
+
+input,label,textarea,select{
+    margin-left: 10%!important;
+}
+
+
+
+
